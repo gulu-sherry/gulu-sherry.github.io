@@ -1,8 +1,7 @@
 # 李宏毅机器学习（Lecture 1）
 # Hung-yi Lee ML (Lecture 1)
 
-> 视频 / Video: [YouTube Lecture](https://www.youtube.com/watch?v=Ye018rCVvOo&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=1)  
-> 依据资料 / Based on: 课程完整文稿（你提供）
+> Video: [YouTube Lecture](https://www.youtube.com/watch?v=Ye018rCVvOo&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=1)  
 
 ## A. 本讲核心结论 / Core takeaways
 
@@ -12,12 +11,6 @@
 - 经典流程是三步：**定义模型（Model）→ 定义损失（Loss）→ 做优化（Optimization）**。
 - 在案例中，模型改进来自 **Domain Knowledge**（观察到每周周期后改模型）。
 
-**English**
-- ML can be viewed as enabling machines to **find a useful function automatically**.
-- Three major task families: **Regression / Classification / Structured Learning**.
-- Standard pipeline: **Model -> Loss -> Optimization**.
-- Practical progress often comes from **domain knowledge**, not blind tuning.
-
 ---
 
 ## B. 什么是机器学习 / What is Machine Learning
@@ -26,23 +19,20 @@
 这节课最重要的一句话：机器学习就是让机器具备“找函数”的能力。  
 给机器一个输入，机器输出你要的结果；关键在于，这个映射函数通常非常复杂，人手写不出来，所以靠数据和算法去“学”出来。
 
-**English**  
-The key sentence: machine learning is about giving machines the ability to find functions.  
-For many real tasks, the mapping from input to output is too complex to handcraft, so we learn it from data.
 
-**课堂例子 / Class examples**
+**课堂例子**
 - 语音识别：声音讯号 -> 文字  
 - 影像辨识：图片 -> 标签  
 - AlphaGo：棋盘状态 -> 下一步落子位置
 
 ---
 
-## C. 三大任务 / Three major tasks
+## C. 三大任务
 
 ### 1) Regression（回归）
 - **中文**：输出是一个连续数值（scalar）。  
 - **English**: Output is a continuous scalar value.  
-- **例子 / Example**: 预测明天中午 PM2.5 数值。
+- **Example**: 预测明天中午 PM2.5 数值。
 
 ### 2) Classification（分类）
 - **中文**：输出是从预先定义好的类别中选一个。  
@@ -169,7 +159,7 @@ The lecture introduces local vs global minima, while hinting that in deep learni
 
 ---
 
-## H. 术语速记 / Term quick sheet
+## H. 术语
 
 - Model：带未知参数的函数 / A parametric function  
 - Feature：输入特征 / Input variable  
@@ -181,7 +171,7 @@ The lecture introduces local vs global minima, while hinting that in deep learni
 
 ---
 
-## I. 复盘问题（可用于讨论区） / Reflection prompts
+## I. 复盘问题 
 
 1. 你当前任务属于 Regression / Classification / Structured Learning 哪一类？  
 2. 你的 Loss 是否真的反映业务目标？  
