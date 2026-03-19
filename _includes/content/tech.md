@@ -4,13 +4,20 @@
 
 ## Machine Learning（课程笔记）
 
-- 李宏毅机器学习（Lecture 1）  
-  - 主题：机器学习的本质、三大任务、三步骤、金融例子  
-  - 笔记 / Notes: [打开本节](#ml-lee-l1)
+{% assign ml_lee = site.data.ml_lee_course %}
+### {{ ml_lee.course_title_zh }} / {{ ml_lee.course_title_en }}
 
-<a id="ml-lee-l1"></a>
-{% capture ml_lee_l1 %}{% include content/tech/ml-lee-intro-01.md %}{% endcapture %}
-{{ ml_lee_l1 | markdownify }}
+{% for lesson in ml_lee.lessons %}
+- L{{ lesson.no }} · [{{ lesson.title_zh }} / {{ lesson.title_en }}]({{ lesson.url | relative_url }})
+  - 状态 / Status: {{ lesson.status }}
+  - 视频 / Video: [YouTube]({{ lesson.source }})
+{% endfor %}
+
+> 维护说明 / Maintenance  
+> 以后新增 L2/L3... 时，只需：  
+> 1) 新建一节页面（如 `/tech/ml/lee/l2/`）  
+> 2) 在 `_data/ml_lee_course.yml` 的 `lessons` 里追加一条记录  
+> 目录会自动更新。
 
 ## 其他目录（示例）
 

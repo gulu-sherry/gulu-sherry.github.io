@@ -1,0 +1,12 @@
+course_id: ml-lee
+course_title_zh: 李宏毅机器学习（系列）
+course_title_en: Hung-yi Lee Machine Learning (Series)
+track: Machine Learning
+lessons:
+  - no: 1
+    slug: l1-ml-basics
+    title_zh: 机器学习本质、三大任务与三步骤
+    title_en: ML Essence, Three Tasks, and Three-Step Workflow
+    url: /tech/ml/lee/l1/
+    source: https://www.youtube.com/watch?v=Ye018rCVvOo&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=1
+    status: published
