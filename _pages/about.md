@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+香港科技大学（广州）金融科技学域博士二年级学生。我正在用这个网站 learn in public，对抗焦虑和脆弱，希望通过分享帮助一些人。
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+我关注的研究与实践方向包括：Information Design、LLM Agent in Finance、Graph Learning in Finance、Diffusion in Time-Series。
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+我爱好羽毛球；有两只猫：咕噜和金猫猫。
+
+你可以在本仓库里更新 `content/*.md` 来维护 FIN/Tech 笔记，也可以在 `_projects/` 里维护项目展示。
