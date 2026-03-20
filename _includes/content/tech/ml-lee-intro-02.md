@@ -128,9 +128,9 @@
 
 ```mermaid
 flowchart LR
-    X[特征向量 x\n(过去若干天观看等)] --> R[线性变换 r = xW + b]
-    R --> A[逐元素激活\na = σ(r) 或 ReLU(r)]
-    A --> Y[加权汇总 y = a·c^T + b]
+    X["特征向量 x<br/>(过去若干天观看等)"] --> R["线性变换 r = xW + b"]
+    R --> A["逐元素激活<br/>a = sigma(r) 或 ReLU(r)"]
+    A --> Y["加权汇总 y = a * c^T + b"]
 ```
 
 解释（对应上图）：
