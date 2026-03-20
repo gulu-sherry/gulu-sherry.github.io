@@ -9,7 +9,7 @@ nav: false
   <div class="home-hero__kicker">Done is Better than Perfect</div>
   <h1 class="home-hero__title">你好，我是 <span class="home-hero__accent">咕噜</span>（Sherry）。</h1>
   <p class="home-hero__subtitle">
-    香港科技大学（广州）金融科技学域博士二年级。我会在这里分享有关FINTECH的知识。 
+    PhD candidate in FINTECH Thrust,HKUST(GZ). 
   </p>
   <div class="home-hero__chips">
     <span class="chip">Information Design</span>
@@ -24,7 +24,6 @@ nav: false
     <a class="btn btn-sm btn-outline-primary" href="#discuss">联系</a>
   </div>
   <div class="home-hero__note">
-    羽毛球；猫咪。
   </div>
 </div>
 
@@ -55,7 +54,7 @@ nav: false
 <section id="intern" class="home-section">
   <div class="home-section__head">
     <h2>LLM × Finance</h2>
-    <p class="text-muted mb-0">内容来自 <code>content/interns.md</code>。</p>
+    <p class="text-muted mb-0"></p>
   </div>
   {% capture interns_md %}{% include content/interns.md %}{% endcapture %}
   <div class="home-md">{{ interns_md | markdownify }}</div>
