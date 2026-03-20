@@ -1,7 +1,1 @@
-# Discussions
-
-- 在金融数据里做 time split / leakage 检测，有哪些你用过最有效的 checklist？
-- 图学习在 FinTech 场景里，图构建（edge）通常怎么做更稳？
-- LLM/Agent 用于金融任务时，如何设计最小可行的可靠性评估（不靠主观观感）？
-- 研究到产品：你认为最容易“翻车”的环节是什么？
 
