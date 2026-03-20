@@ -1,6 +1,6 @@
 
 
-## Machine Learning（Lecture Notes）
+## Machine Learning
 
 {% assign ml_lee = site.data.ml_lee_course %}
 
