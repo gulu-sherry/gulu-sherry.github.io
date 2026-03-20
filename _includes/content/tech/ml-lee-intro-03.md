@@ -1,7 +1,7 @@
 # 李宏毅机器学习（Lecture 3）
 # Hung-yi Lee ML (Lecture 3)
 
-> 视频 / Video: https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3
+> 视频 / Video: [Youtube课程](https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3)
 
 
 
