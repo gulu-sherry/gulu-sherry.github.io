@@ -7,9 +7,7 @@
 
 ---
 
-## A. 作业长什么样？训练数据（Training Data） vs 测试数据（Test Data）
-
-这门课前期的多个作业（例如作业二到作业五）虽然任务不同，但形式高度相似：
+## A. 训练数据（Training Data） vs 测试数据（Test Data）
 
 ### 1）训练数据（Training Data）
 训练数据里通常包含样本的：
@@ -25,9 +23,8 @@
 
 ---
 
-## B. 训练（Training）到底在做什么：f_theta(x) → Loss → Optimization
+## B. Training三步骤：Model → Loss → Optimization
 
-老师把训练过程总结成三步（你可以当作所有作业的通用套路）：
 
 1. **定义模型（Model）**：带未知参数的函数
 
@@ -59,7 +56,7 @@
 
 最后把 \(\theta^*\) 代入测试数据，得到预测值并提交。
 
-> 常见现实提醒：直接跑助教的 sample code 往往只能得到一个 very simple baseline（简单基线），想变好需要更系统的“诊断（diagnosis）+改进（improvement）”。
+> 提醒：直接跑助教的 sample code 往往只能得到一个 very simple baseline（简单基线），想变好需要更系统的“诊断+改进”。
 
 ---
 
@@ -88,23 +85,23 @@
 
 ---
 
-## D. Model Bias（模型偏差）是什么意思？为什么太简单会“永远找不到针”
+## D. Model Bias是什么？“永远找不到针”
 
 老师用非常形象的比喻解释 Model Bias：
 
-- 你有一个允许的模型集合（function set），对应不同参数 \(\theta\) 可以产生不同函数；
+- 你有一个模型集合（function set），对应不同参数 \(\theta\) 可以产生不同函数；
 - 如果这个集合太小，里面**没有任何一个函数**能把 Loss 降到很低；
 - 那么即使你算出了 \(\theta^*\)（在你集合里最好的那个），Loss 也仍然不会足够低。
 
-**解决方向**（课堂结论）：
-- 增加输入特征（features）
+**解决方向**：
+- 增加输入特征
 - 使用更大/更灵活的模型（例如更深的网络，深度学习）
 
 ---
 
-## E. Optimization（优化问题）是什么意思？Residual Network 的例子
+## E. Optimization是什么？
 
-当你怀疑“不是模型不够大，而是梯度下降（Gradient Descent）没找到好解”时，老师给了一个判断方法：
+当你怀疑“不是模型不够大，而是梯度下降没找到解”时，老师给了一个判断方法：
 
 **比较不同深度（depth）的模型在 Training Loss 上的上限。**
 
@@ -112,25 +109,24 @@
 - 20 层网络在训练过程中能达到更低的 Training Loss
 - 56 层网络反而训练不上去（Training Loss 更高）
 
-如果 56 层网络表达能力（Model capacity）理论上更强，那它没做到，说明更可能是 **Optimization 不给力（optimization failure）**，而不是 overfitting 或 model bias。
+56 层网络表达能力理论上更强，但它没做到更好，说明更可能是 **optimization failure**，而不是 overfitting 或 model bias。
 
 ---
 
 ## F. Overfitting（过拟合）是什么？训练损失（train）小，测试损失（test）大
 
-Overfitting（过拟合）在课堂里被严格定义为：
+Overfitting（过拟合）定义：
 - **Training Loss 变好（更低）**
 - 但 **Testing Loss 不跟着变好（更高）**
 
-老师给了极端直觉例子：
+例子：
 - 如果模型“太会记”（capacity 很大），它可以在训练点上完美拟合
-- 但在训练没见过的位置（测试点）上会产生“自由发挥（freestyle）”，导致测试损失暴涨
+- 但在训练没见过的测试点上会产生“自由发挥（freestyle）”，导致测试损失暴涨
 
 ---
 
 ## G. 过拟合（Overfitting）怎么解决？
 
-课堂提到两个大方向：
 
 ### 方向 1：增加训练数据（Training Data）
 最直观有效，但在作业中不允许你去“额外搜集数据”。
@@ -142,7 +138,6 @@ Overfitting（过拟合）在课堂里被严格定义为：
 ### 方向 2：限制模型自由度（降低表达能力）
 给模型加“限制（constraint）”，让它更不容易在训练点上乱拟合。
 
-课堂举例：
 - 让模型参数更少（less neurons）
 - 参数共享（shared parameters）
 - 用更少的特征（fewer features）
@@ -150,7 +145,7 @@ Overfitting（过拟合）在课堂里被严格定义为：
 - Regularization（正则化）
 - Dropout（随机丢弃）
 
-> 重要提醒：约束太强会反过来带来 Model Bias（模型偏差）。
+> 提醒：约束太强会反过来带来 Model Bias（模型偏差）。
 
 ---
 
@@ -167,19 +162,19 @@ Kaggle 通常会把测试分成：
 - **Public testing set（公开榜）**
 - **Private testing set（私有榜）**
 
-如果你反复根据 Public leaderboard（公开榜）调模型，你就可能在 Public 上过拟合，而在 Private 上翻车。
+如果你反复根据 Public调模型，你就可能在 Public 上过拟合，而在 Private 上翻车。
 
 ### 2）正确做法：Validation Set（验证集）选模型
 老师推荐：
 - 把训练数据划分成 Training Set 和 Validation Set
 - 用 Validation Loss 选择模型
-- 选好后再看 Kaggle（公共/私有）结果
+- 选好后再看 Kaggle结果
 
 ---
 
 ## I. N-fold Cross Validation（N 折交叉验证）：更稳的模型选择
 
-当你担心 Validation 划分不理想，老师给出 N-fold Cross Validation：
+当你担心 Validation 划分不理想：
 
 1. 将训练数据切成 N 份
 2. 轮流用其中 1 份做 Validation，其余做 Training
@@ -190,11 +185,10 @@ Kaggle 通常会把测试分成：
 
 ## J. 课堂实例：2/26 的预测很差，并不是“模型坏了”，而是 Mismatch（分布不匹配）
 
-老师最后展示了一个“看起来很惨”的预测例子：
 - 2/26 是某次观看人次的最高日（反常低谷/高谷）
 - 但模型预测仍然偏离很大（误差很明显）
 
-原因并非单纯 overfitting，而是：真实数据里出现了训练分布里没有覆盖的情形（课堂中举了与节日相关的“特殊日”）。
+原因并非单纯 overfitting，而是：真实数据里出现了训练分布里没有覆盖的情形（节日相关）。
 
 这就是 Mismatch（分布不匹配）：模型学到的规律无法覆盖新情况。
 
@@ -215,7 +209,7 @@ flowchart TB
     E --> E1["Mismatch（分布不匹配）<br/>问题往往需要重做数据/任务设计"]
 ```
 
-> 注：这张图把课堂大部分结论串起来；你每次遇到作业不理想，都可以先按它走一遍。
+> 注：这张图把课堂大部分结论串起来；每次遇到作业不理想，都可以先按它走一遍。
 
 ---
 
