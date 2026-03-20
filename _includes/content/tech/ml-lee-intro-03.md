@@ -1,10 +1,9 @@
 # 李宏毅机器学习（Lecture 3）
 # Hung-yi Lee ML (Lecture 3)
 
-> 视频 / Video:
-> https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3
->
-> 依据 / Based on: 你提供的第三节文稿
+> 视频 / Video: https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3
+
+
 
 ---
 
@@ -60,20 +59,19 @@
 当你在 Kaggle 上的分数不满意时，老师的第一建议是：
 **先检查 Training Loss，再决定接下来该怀疑什么。**
 
-### 1）数据分布还正常吗：Mismatch（分布不匹配）
+### 1）数据分布：Mismatch（分布不匹配）
 
-在课堂里，老师强调了一类容易被误认为 overfitting 的问题：
+一类容易被误认为 overfitting 的问题：
 
 - 如果训练集（Training Set）和测试集（Test Set）的数据生成分布不同（distribution mismatch），你怎么加模型复杂度/怎么调训练，都可能很难改善。
-- 因此老师把它叫做 **Mismatch（分布不匹配 / mismatch）**。
 
-> 典型含义：训练时学到的规律根本不适用于测试时的世界。
+> 典型：训练时学到的规律根本不适用于测试时的世界。
 
 ---
 
 ### 2）决策表：用 Training/Test Loss 判断问题来源
 
-| 现象（现象是你训练时该记录的两个量） | 更可能的原因（Most likely） | 你该怎么做（方向） |
+| 现象 | 更可能的原因 | 你该怎么做 |
 |---|---|---|
 | Training Loss 很大 | Model Bias（模型偏差：模型表达能力不够） 或 Optimization（优化没做好） | 增强模型表达能力（加特征/增大模型/更换架构）或改进优化策略（避免梯度下降失败） |
 | Training Loss 很小，但 Testing/Validation Loss 很大 | Overfitting（过拟合） | 用正则化（Regularization）、Dropout、Early stopping、Data augmentation（数据增强）等限制自由度 |
@@ -181,7 +179,7 @@ Kaggle 通常会把测试分成：
 
 ---
 
-## J. 课堂收束：2/26 的预测很差，并不是“模型坏了”，而是 Mismatch（分布不匹配）
+## J. 课堂实例：2/26 的预测很差，并不是“模型坏了”，而是 Mismatch（分布不匹配）
 
 老师最后展示了一个“看起来很惨”的预测例子：
 - 2/26 是某次观看人次的最高日（反常低谷/高谷）
@@ -193,7 +191,7 @@ Kaggle 通常会把测试分成：
 
 ---
 
-## K. 一张脑图（Mental Map）：从“记录 Loss”到“选择解决方案”
+## K. 一张脑图：从“记录 Loss”到“选择解决方案”
 
 ```mermaid
 flowchart TB
@@ -212,7 +210,7 @@ flowchart TB
 
 ---
 
-## L. 可用于讨论区的提问（Discussion prompts）
+## L. 思考
 
 1. 你的作业里，training loss 和 testing loss 的变化趋势说明了什么？
 2. 你有没有做过“浅模型 vs 深模型”的对比来区分 optimization failure 和 model bias？
