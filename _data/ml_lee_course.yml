@@ -10,3 +10,10 @@ lessons:
     url: /tech/ml/lee/l1/
     source: https://www.youtube.com/watch?v=Ye018rCVvOo&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=1
     status: published
+  - no: 2
+    slug: l2-model-bias-and-neural-networks
+    title_zh: 从 Model Bias 到神经网络（Sigmoid / ReLU / Overfitting）
+    title_en: Model Bias to Neural Networks (Sigmoid / ReLU / Overfitting)
+    url: /tech/ml/lee/l2/
+    source: https://www.youtube.com/watch?v=bHcJCp2Fyxs&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=2
+    status: published
