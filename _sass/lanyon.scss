@@ -1,0 +1,169 @@
+/* Lanyon-inspired homepage layout.
+   Reference: content-first, sidebar-led presentation inspired by poole/lanyon. */
+
+.lanyon-home {
+  display: grid;
+  grid-template-columns: 18rem minmax(0, 1fr);
+  gap: 3rem;
+  max-width: 72rem;
+  margin: 2rem auto 4rem;
+}
+
+.lanyon-sidebar-card {
+  position: sticky;
+  top: 6rem;
+  align-self: start;
+  padding: 2rem 1.5rem;
+  border-radius: 0.35rem;
+  background: #202b38;
+  color: #e9eef3;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.lanyon-sidebar-card__kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b7c7d9;
+  margin-bottom: 0.9rem;
+}
+
+.lanyon-sidebar-card__title {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.lanyon-sidebar-card__text {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: #d9e3ec;
+  margin-bottom: 1.4rem;
+}
+
+.lanyon-sidebar-card__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.lanyon-sidebar-card__nav a {
+  color: #d9e3ec;
+  text-decoration: none;
+  font-size: 0.96rem;
+}
+
+.lanyon-sidebar-card__nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.lanyon-sidebar-card__meta {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  color: #b9c7d6;
+}
+
+.lanyon-content {
+  min-width: 0;
+  max-width: 42rem;
+}
+
+.lanyon-hero {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.lanyon-hero__eyebrow {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.lanyon-hero__title {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.lanyon-hero__lead,
+.lanyon-hero__note {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.lanyon-hero__note {
+  margin-top: 0.8rem;
+  color: #6b7280;
+}
+
+.lanyon-section {
+  padding: 0 0 2rem;
+  margin: 0 0 2rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.lanyon-section:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.lanyon-section .home-section__head {
+  margin-bottom: 1rem;
+}
+
+.lanyon-section .home-section__head h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.25rem;
+}
+
+.lanyon-section .home-md,
+.lanyon-section .home-md p,
+.lanyon-section .home-md li {
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.lanyon-section .home-contact {
+  gap: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .lanyon-home {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .lanyon-sidebar-card {
+    position: static;
+  }
+
+  .lanyon-content {
+    max-width: none;
+  }
+}
+
+html[data-theme="dark"] .lanyon-content {
+  color: #e5e7eb;
+}
+
+html[data-theme="dark"] .lanyon-hero,
+html[data-theme="dark"] .lanyon-section {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+html[data-theme="dark"] .lanyon-hero__eyebrow,
+html[data-theme="dark"] .lanyon-hero__note,
+html[data-theme="dark"] .lanyon-section .text-muted {
+  color: #a1a1aa !important;
+}
+
+html[data-theme="dark"] .lanyon-hero__lead {
+  color: #e4e4e7;
+}
