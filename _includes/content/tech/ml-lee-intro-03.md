@@ -25,28 +25,37 @@
 
 ---
 
-## B. 训练（Training）到底在做什么：f\(_\theta\)(x) → Loss → Optimization
+## B. 训练（Training）到底在做什么：f_theta(x) → Loss → Optimization
 
 老师把训练过程总结成三步（你可以当作所有作业的通用套路）：
 
-1. **定义模型（Model）**：带未知参数的函数  
-   \[
-   f_\theta(x)
-   \]
+1. **定义模型（Model）**：带未知参数的函数
+
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  f_\theta(x)
+  $$
+</div>
    - \(\theta\)：模型里所有未知参数（parameter set）
    - 输入 \(x\)：特征（feature）
 
-2. **定义损失（Loss）函数**：  
+2. **定义损失（Loss）函数**：
    Loss 本身是一个函数，输入是一组参数值 \(\theta\)，输出表示“这组参数好不好”：
-   \[
-   L(\theta)
-   \]
 
-3. **优化（Optimization）**：  
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  L(\theta)
+  $$
+</div>
+
+3. **优化（Optimization）**：
    找到让 Loss 最小的参数：
-   \[
-   \theta^* = \arg\min_\theta L(\theta)
-   \]
+
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \theta^* = \arg\min_\theta L(\theta)
+  $$
+</div>
 
 最后把 \(\theta^*\) 代入测试数据，得到预测值并提交。
 
@@ -195,15 +204,15 @@ Kaggle 通常会把测试分成：
 
 ```mermaid
 flowchart TB
-    A[先记录 Training Loss / Testing Loss\n并判断是否 mismatch] --> B{Training Loss 大吗？}
+    A["先记录 Training Loss / Testing Loss<br/>并判断是否 mismatch"] --> B{"Training Loss 大吗？"}
     B -- 是 --> C{模型表达够吗？}
-    C -- 不够 --> C1[Model Bias（模型偏差）\n加特征/增大模型/深度学习]
-    C -- 够 --> C2[Optimization（优化问题）\n比较浅/深模型\n检查梯度下降是否没找到好解]
-    B -- 否 --> D{Testing Loss 大吗？}
-    D -- 是 --> D1[Overfitting（过拟合）\nRegularization/Dropout/Early stopping\nData augmentation]
-    D -- 否 --> D2[模型工作正常\n只需做微调/提升基线]
-    A --> E{如果分布明显不同}\n
-    E --> E1[Mismatch（分布不匹配）\n问题往往需要重做数据/任务设计]
+    C -- 不够 --> C1["Model Bias（模型偏差）<br/>加特征/增大模型/深度学习"]
+    C -- 够 --> C2["Optimization（优化问题）<br/>比较浅模型和深模型<br/>检查梯度下降是否找到好解"]
+    B -- 否 --> D{"Testing Loss 大吗？"}
+    D -- 是 --> D1["Overfitting（过拟合）<br/>Regularization/Dropout/Early stopping<br/>Data augmentation"]
+    D -- 否 --> D2["模型工作正常<br/>只需做微调/提升基线"]
+    A --> E{"如果分布明显不同"}
+    E --> E1["Mismatch（分布不匹配）<br/>问题往往需要重做数据/任务设计"]
 ```
 
 > 注：这张图把课堂大部分结论串起来；你每次遇到作业不理想，都可以先按它走一遍。
