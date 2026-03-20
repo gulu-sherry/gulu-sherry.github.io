@@ -17,3 +17,10 @@ lessons:
     url: /tech/ml/lee/l2/
     source: https://www.youtube.com/watch?v=bHcJCp2Fyxs&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=2
     status: published
+  - no: 3
+    slug: l3-overfitting-and-validation
+    title_zh: 从 Loss 诊断到验证选择（Overfitting / Mismatch / Cross Validation）
+    title_en: Diagnosing with Loss + Model Selection (Overfitting / Mismatch / Cross Validation)
+    url: /tech/ml/lee/l3/
+    source: https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3
+    status: published
