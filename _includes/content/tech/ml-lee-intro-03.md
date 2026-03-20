@@ -197,6 +197,7 @@ Kaggle 通常会把测试分成：
 ## K. 一张脑图：从“记录 Loss”到“选择解决方案”
 
 ```mermaid
+%%{init: {"flowchart": {"useMaxWidth": true}}}%%
 flowchart TB
     A["先记录 Training Loss / Testing Loss<br/>并判断是否 mismatch"] --> B{"Training Loss 大吗？"}
     B -- 是 --> C{模型表达够吗？}
