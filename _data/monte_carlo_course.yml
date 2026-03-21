@@ -12,3 +12,10 @@ lessons:
     url: /tech/mcs/t1/
     source: ""
     status: published
+  - no: 2
+    slug: topic-2-pricing-via-simulation
+    title_zh: Topic 2 金融衍生品模拟定价
+    title_en: Topic 2 Pricing Financial Derivatives via Simulation
+    url: /tech/mcs/t2/
+    source: ""
+    status: published
