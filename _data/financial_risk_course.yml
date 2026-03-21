@@ -1,0 +1,14 @@
+course_id: financial-risk-management
+course_title_zh: 金融风险管理（系列）
+course_title_en: Financial Risk Management (Series)
+track: FIN
+series_status: building
+planned_topics: 6
+lessons:
+  - no: 1
+    slug: topic-1-financial-risks-and-hedging
+    title_zh: Topic 1 金融风险、波动率与利率风险对冲
+    title_en: Topic 1 Financial Risks, Volatility, and Interest Rate Hedging
+    url: /fin/frm/t1/
+    source: ""
+    status: published
