@@ -19,3 +19,10 @@ lessons:
     url: /tech/mcs/t2/
     source: ""
     status: published
+  - no: 3
+    slug: topic-3-variance-reduction-techniques
+    title_zh: Topic 3 方差缩减方法
+    title_en: Topic 3 Variance Reduction Techniques
+    url: /tech/mcs/t3/
+    source: ""
+    status: published

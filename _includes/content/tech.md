@@ -13,7 +13,7 @@
 {% assign mcs = site.data.monte_carlo_course %}
 
 - 系列入口：[{{ mcs.course_title_zh }}]({{ mcs.series_url | relative_url }})
-- 状态：按 4 个 Topic 持续更新，Topic 1 与 Topic 2 已发布
+- 状态：按 4 个 Topic 持续更新，Topic 1 至 Topic 3 已发布
 {% for lesson in mcs.lessons %}
 - T{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
   {% if lesson.source and lesson.source != "" %}
