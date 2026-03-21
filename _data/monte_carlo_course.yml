@@ -26,3 +26,10 @@ lessons:
     url: /tech/mcs/t3/
     source: ""
     status: published
+  - no: 4
+    slug: topic-4-rare-event-simulation
+    title_zh: Topic 4 稀有事件模拟
+    title_en: Topic 4 Rare Event Simulation
+    url: /tech/mcs/t4/
+    source: ""
+    status: published
