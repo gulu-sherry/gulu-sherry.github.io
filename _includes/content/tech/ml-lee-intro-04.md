@@ -1,7 +1,7 @@
 # 李宏毅机器学习：Optimization 失败怎么办？
 # Hung-yi Lee ML: Optimization - Critical Point (Local Minima vs. Saddle Point)
 
-> 视频 / Video: [Youtube 课程链接](https://www.youtube.com/watch?v=WeHM2xpYQpw)
+> 视频 / Video: [Youtube课程](https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=4)
 
 ---
 
