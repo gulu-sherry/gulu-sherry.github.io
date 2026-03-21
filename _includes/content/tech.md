@@ -12,7 +12,6 @@
 
 {% assign mcs = site.data.monte_carlo_course %}
 
-- 系列入口：[{{ mcs.course_title_zh }}]({{ mcs.series_url | relative_url }})
 - 状态：4 个 Topic 已全部发布
 {% for lesson in mcs.lessons %}
 - T{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
