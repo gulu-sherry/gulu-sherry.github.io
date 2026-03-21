@@ -1,6 +1,6 @@
 # 蒙特卡洛模拟（Lecture 1）
 
-> 资料来源：课程课件 `Jan 25`（FTEC 5220 Monte Carlo Simulation in Finance）  
+> 资料来源：FTEC 5220 Monte Carlo Simulation in Finance  
 > 主题：随机变量生成（Random Variable Generation）、逆变换法（Inverse Transform Method）、分位数（Quantile）直觉
 
 ## 一句话理解
