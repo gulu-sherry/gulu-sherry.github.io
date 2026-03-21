@@ -24,3 +24,10 @@ lessons:
     url: /tech/ml/lee/l3/
     source: https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=3
     status: published
+  - no: 4
+    slug: l4-optimization
+    title_zh: Optimization 失败怎么办？
+    title_en: 
+    url: /tech/ml/lee/l4/
+    source: （https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=4
+    status: published
