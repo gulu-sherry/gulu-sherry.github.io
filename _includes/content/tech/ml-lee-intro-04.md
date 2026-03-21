@@ -2,12 +2,11 @@
 # Hung-yi Lee ML (Lecture 4)
 
 > 视频 / Video: [Youtube课程](https://www.youtube.com/watch?v=WeHM2xpYQpw&list=PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J&index=4)
-
 ---
 
 ## A. 为什么 Optimization（优化）会失败？
 
-当我们进行模型训练时，常会遇到参数更新后，**Training Loss（训练损失）** 不再下降，但我们对结果仍不满意。这通常不是 **Overfitting（过拟合）** 的问题，而是 **Optimization（优化）** 出了问题。
+当我们在进行模型训练时，常会遇到参数更新后，**Training Loss（训练损失）** 不再下降，但我们对结果仍不满意。这通常不是 **Overfitting（过拟合）** 的问题，而是 **Optimization（优化）** 出了问题。
 
 ### 1）常见的现象
 * **深层 vs. 浅层**：深层网络的表现甚至不如浅层网络或线性模型，说明 Deep Network 的潜力没被发挥。
@@ -15,8 +14,6 @@
 
 ### 2）失败的猜想：梯度为零（Gradient is Zero）
 过去认为训练停滞是因为走到了 **Gradient（梯度）** 为零的地方，导致参数无法再更新。这些点统称为 **Critical Point（临界点/驻点）**。
-
-
 
 ---
 
@@ -30,8 +27,6 @@
 
 > **关键观念**：如果你卡在 **Saddle Point（鞍点）**，其实不用害怕，因为旁边还有路可以让 Loss 更低；但如果卡在 **Local Minima**，则相对困难。
 
-
-
 ---
 
 ## C. 数学侦测：它是哪种 Critical Point？
@@ -40,9 +35,7 @@
 
 ### 1）泰勒级数近似公式
 
-$$
-L(\theta) \approx L(\theta') + (\theta - \theta')^T g + \frac{1}{2}(\theta - \theta')^T H (\theta - \theta')
-$$
+$$L(\theta) \approx L(\theta') + (\theta - \theta')^T g + \frac{1}{2}(\theta - \theta')^T H (\theta - \theta')$$
 
 * **$g$ (Gradient)**：一次微分。在 Critical Point 时，$g = 0$（向量为零）。
 * **$H$ (Hessian)**：二次微分矩阵，收集了所有二次偏微分项 $H_{ij} = \frac{\partial^2 L}{\partial \theta_i \partial \theta_j}$。
@@ -52,9 +45,9 @@ $$
 
 | 条件 | 矩阵特性 | 地貌类型 |
 | :--- | :--- | :--- |
-| 对所有 $v$，$v^T H v > 0$ | Positive Definite (正定) | **Local Minima** (所有 Eigenvalue 为正) |
-| 对所有 $v$，$v^T H v < 0$ | Negative Definite (负定) | **Local Maxima** (所有 Eigenvalue 为负) |
-| $v^T H v$ 有正负之分 | 有正负 Eigenvalue | **Saddle Point** (鞍点) |
+| 对所有 $v$，$v^T H v > 0$ | Positive Definite (正定) | **Local Minima** (所有特征值为正) |
+| 对所有 $v$，$v^T H v < 0$ | Negative Definite (负定) | **Local Maxima** (所有特征值为负) |
+| $v^T H v$ 有正负之分 | 有正负特征值 | **Saddle Point** (鞍点) |
 
 ---
 
@@ -78,36 +71,31 @@ $$
 * **Critical Point**: 在原点 $(0,0)$ 处，$g=0$。
 * **Hessian at (0,0)**: 算出矩阵为 $\begin{bmatrix} 0 & -2 \\ -2 & 0 \end{bmatrix}$。
 * **Eigenvalues**: 算出为 $2$ 与 $-2$（有正有负）。
-* **结论**: 原点是个 **Saddle Point**。只要往 Eigenvector $[1, 1]$ 的方向走，就能逃离原点并降低 Loss。
-
-
+* **结论**: 原点是个 **Saddle Point**。
 
 ---
 
 ## F. 高维度空间的启示：Local Minima 真的常见吗？
 
 ### 1）《三体》故事的启示
-正如《三体》中的狄奥伦娜能从封闭的石棺中取出圣杯（因为她在四维空间看，石棺并非封闭），在低维度看起来是 Local Minima 的点，在更高维度往往只是 Saddle Point。
+在低维度看起来是 Local Minima 的点，在更高维度往往只是 Saddle Point。维度越高，路就越多。
 
 ### 2）Minimum Ratio（极小值比例）
-研究显示，在动辄百万、千万维度的 Deep Learning 参数空间中：
-* **维度越高，路越多**：要所有方向都刚好是“向上”的概率极低。
-* **经验证据**：实验发现，即使在 Loss 很难下降的地方，负的 Eigenvalue 比例通常仍占据一定程度，真正的 Local Minima 其实非常罕见。
+实验发现，在动辄百万维度的参数空间中，负的特征值比例通常仍占据一定程度，**真正的 Local Minima 其实非常罕见**。
 
 ---
 
 ## G. 总结脑图
 
 ```mermaid
-%%{init: {"flowchart": {"useMaxWidth": true}}}%%
-flowchart TD
-    A["Optimization 停滞 (Gradient = 0)"] --> B{"它是哪种 Critical Point?"}
-    B -- "四周皆高" --> C["Local Minima (局部极小值)<br/>所有 Eigenvalues > 0"]
-    B -- "有高有低" --> D["Saddle Point (鞍点)<br/>Eigenvalues 有正有负"]
+graph TD
+    A[Optimization 停滞 Gradient=0] --> B{它是哪种 Critical Point?}
+    B -->|四周皆高| C[Local Minima 局部极小值]
+    B -->|有高有低| D[Saddle Point 鞍点]
     
-    C --> C1["较难处理<br/>但在高维空间极其罕见"]
-    D --> D1["可以逃离"]
-    D1 --> D2["找负 Eigenvalue 对应之 Eigenvector<br/>沿此方向更新参数"]
+    C --> C1[高维空间极其罕见]
+    D --> D1[可以逃离]
+    D1 --> D2[找负特征值对应的特征向量<br/>沿此方向更新参数]
     
-    E["实务考量"] --> E1["Hessian 运算量巨大<br/>通常使用其他优化算法替代直算"]
-    E --> E2["高维度空间中<br/>Saddle Point 远比 Local Minima 常见"]
+    E[实务考量] --> E1[Hessian 运算量巨大<br/>通常使用其他优化算法]
+    E --> E2[高维空间中鞍点远比局部极小值常见]
