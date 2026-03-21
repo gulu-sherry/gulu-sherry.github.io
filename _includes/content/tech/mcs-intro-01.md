@@ -58,9 +58,11 @@
 计算机最容易稳定地产生的是区间 $[0,1]$ 上的均匀随机数。  
 因此很多模拟算法都默认我们已经拿到了独立同分布的：
 
-\[
-U_1, U_2, \dots \overset{i.i.d.}{\sim} \mathrm{Unif}(0,1).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  U_1, U_2, \dots \overset{i.i.d.}{\sim} \mathrm{Unif}(0,1).
+  $$
+</div>
 
 于是问题变成：
 
@@ -72,9 +74,11 @@ U_1, U_2, \dots \overset{i.i.d.}{\sim} \mathrm{Unif}(0,1).
 
 对于随机变量 $X$，其分布函数（Cumulative Distribution Function, CDF）定义为：
 
-\[
-F(x) = \mathbb{P}(X \le x).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  F(x) = \mathbb{P}(X \le x).
+  $$
+</div>
 
 如果 $F$ 严格递增，那么反函数 $F^{-1}$ 存在。  
 这时 $F^{-1}(u)$ 可以理解为“第 $u$ 分位点（quantile）”。
@@ -88,9 +92,11 @@ F(x) = \mathbb{P}(X \le x).
 
 即
 
-\[
-X = F^{-1}(U).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = F^{-1}(U).
+  $$
+</div>
 
 这就是“随机分位数（Random Quantile）”的视角。
 
@@ -102,34 +108,42 @@ X = F^{-1}(U).
 
 若 $U \sim \mathrm{Unif}(0,1)$，则其分布函数为：
 
-\[
-F_U(u)=
-\begin{cases}
-0, & u < 0, \\
-u, & 0 \le u \le 1, \\
-1, & u > 1.
-\end{cases}
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  F_U(u)=
+  \begin{cases}
+  0, & u < 0, \\
+  u, & 0 \le u \le 1, \\
+  1, & u > 1.
+  \end{cases}
+  $$
+</div>
 
 ### 逆变换法的核心命题
 
 若随机变量 $X$ 的分布函数 $F$ 连续且严格递增，则
 
-\[
-U = F(X) \sim \mathrm{Unif}(0,1).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  U = F(X) \sim \mathrm{Unif}(0,1).
+  $$
+</div>
 
 反过来，若
 
-\[
-U \sim \mathrm{Unif}(0,1),
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  U \sim \mathrm{Unif}(0,1),
+  $$
+</div>
 
 则
 
-\[
-X = F^{-1}(U)
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = F^{-1}(U)
+  $$
+</div>
 
 服从分布函数 $F$。
 
@@ -137,15 +151,17 @@ X = F^{-1}(U)
 
 对任意 $u \in [0,1]$，
 
-\[
-\begin{aligned}
-\mathbb{P}(U \le u)
-&= \mathbb{P}(F(X)\le u) \\
-&= \mathbb{P}(X \le F^{-1}(u)) \\
-&= F(F^{-1}(u)) \\
-&= u.
-\end{aligned}
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \begin{aligned}
+  \mathbb{P}(U \le u)
+  &= \mathbb{P}(F(X)\le u) \\
+  &= \mathbb{P}(X \le F^{-1}(u)) \\
+  &= F(F^{-1}(u)) \\
+  &= u.
+  \end{aligned}
+  $$
+</div>
 
 因此 $U$ 的分布函数就是 $u$ 本身，也就是均匀分布。
 
@@ -157,15 +173,19 @@ X = F^{-1}(U)
 
 如果 $U$ 真的是均匀分布，那么：
 
-\[
-\mathbb{P}(0.2 \le U \le 0.3)=0.1
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \mathbb{P}(0.2 \le U \le 0.3)=0.1
+  $$
+</div>
 
 同时
 
-\[
-\mathbb{P}(0.85 \le U \le 0.95)=0.1
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \mathbb{P}(0.85 \le U \le 0.95)=0.1
+  $$
+</div>
 
 这表示：随机变量落在“20%-30% 分位区间”和落在“85%-95% 分位区间”的概率一样，都是 10%。  
 所以先抽一个分位数，再映射成实际取值，是非常自然的思路。
@@ -185,9 +205,11 @@ X = F^{-1}(U)
 
 这时普通反函数未必存在，所以要用广义逆（Generalized Inverse）：
 
-\[
-F^{-1}(u) = \inf \{x : F(x) \ge u\}.
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  F^{-1}(u) = \inf \{x : F(x) \ge u\}.
+  $$
+</div>
 
 这里的 $\inf$ 是下确界（infimum）。
 
@@ -209,9 +231,11 @@ F^{-1}(u) = \inf \{x : F(x) \ge u\}.
 
 若 $X \sim N(0,1)$，其分布函数记作 $\Phi(x)$，则：
 
-\[
-X = \Phi^{-1}(U), \qquad U \sim \mathrm{Unif}(0,1).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = \Phi^{-1}(U), \qquad U \sim \mathrm{Unif}(0,1).
+  $$
+</div>
 
 这告诉我们：  
 只要能够计算或近似标准正态分布的逆分布函数，就能从均匀随机数生成正态随机数。
@@ -233,21 +257,27 @@ X = \Phi^{-1}(U), \qquad U \sim \mathrm{Unif}(0,1).
 
 若 $X$ 的均值为 $\theta$，则其分布函数可写为：
 
-\[
-F(x)=1-e^{-x/\theta}, \qquad x \ge 0.
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  F(x)=1-e^{-x/\theta}, \qquad x \ge 0.
+  $$
+</div>
 
 令 $U = F(X)$，反解得：
 
-\[
-X = -\theta \ln(1-U).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = -\theta \ln(1-U).
+  $$
+</div>
 
 由于 $U$ 与 $1-U$ 同分布，通常直接写成：
 
-\[
-X = -\theta \ln U.
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = -\theta \ln U.
+  $$
+</div>
 
 ### 为什么这个例子重要
 
@@ -266,21 +296,27 @@ X = -\theta \ln U.
 课件还提到布朗运动（Brownian Motion）相关的反正弦律（Arcsine Law）例子。  
 若某个随机变量的分布函数为：
 
-\[
-F(x)=\frac{2}{\pi}\sin^{-1}(\sqrt{x}), \qquad 0 < x < 1,
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  F(x)=\frac{2}{\pi}\sin^{-1}(\sqrt{x}), \qquad 0 < x < 1,
+  $$
+</div>
 
 则逆变换给出：
 
-\[
-X = \sin^2\left(\frac{\pi U}{2}\right), \qquad U \sim \mathrm{Unif}(0,1).
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = \sin^2\left(\frac{\pi U}{2}\right), \qquad U \sim \mathrm{Unif}(0,1).
+  $$
+</div>
 
 利用三角恒等式还能化成等价形式：
 
-\[
-X = \frac{1-\cos(\pi U)}{2}.
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = \frac{1-\cos(\pi U)}{2}.
+  $$
+</div>
 
 ### 这个例子想说明什么
 
@@ -293,15 +329,19 @@ X = \frac{1-\cos(\pi U)}{2}.
 课件附录还简单回顾了线性同余生成器（Linear Congruential Generator, LCG）。  
 它的递推形式通常写作：
 
-\[
-X_{n+1} = (aX_n + c) \bmod m,
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X_{n+1} = (aX_n + c) \bmod m,
+  $$
+</div>
 
 再归一化为
 
-\[
-U_{n+1} = \frac{X_{n+1}}{m}.
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  U_{n+1} = \frac{X_{n+1}}{m}.
+  $$
+</div>
 
 ### 这部分的重点不是“手写随机数生成器”
 
@@ -366,9 +406,11 @@ flowchart TD
 - 实务上通常从均匀分布随机数开始
 - 逆变换法的核心是：
 
-\[
-X = F^{-1}(U), \qquad U \sim \mathrm{Unif}(0,1)
-\]
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X = F^{-1}(U), \qquad U \sim \mathrm{Unif}(0,1)
+  $$
+</div>
 
 - 它背后的直觉是“随机抽分位数”
 - 当 $F$ 不严格递增时，用广义逆替代普通反函数
