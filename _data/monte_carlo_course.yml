@@ -1,0 +1,14 @@
+course_id: monte-carlo-simulation
+course_title_zh: 蒙特卡洛模拟（系列）
+course_title_en: Monte Carlo Simulation (Series)
+track: Tech
+series_url: /tech/mcs/
+series_status: building
+lessons:
+  - no: 1
+    slug: l1-random-variable-generation-and-inverse-transform
+    title_zh: 随机变量生成、逆变换法与分位数直觉
+    title_en: Random Variable Generation, Inverse Transform, and Quantile Intuition
+    url: /tech/mcs/l1/
+    source: ""
+    status: published
