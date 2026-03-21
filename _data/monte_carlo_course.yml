@@ -6,9 +6,9 @@ series_url: /tech/mcs/
 series_status: building
 lessons:
   - no: 1
-    slug: l1-random-variable-generation-and-inverse-transform
-    title_zh: 随机变量生成、逆变换法与分位数直觉
-    title_en: Random Variable Generation, Inverse Transform, and Quantile Intuition
-    url: /tech/mcs/l1/
+    slug: topic-1-sampling-and-expectation
+    title_zh: Topic 1 随机变量生成与蒙特卡洛估计
+    title_en: Topic 1 Sampling Methods and Monte Carlo Estimation
+    url: /tech/mcs/t1/
     source: ""
     status: published

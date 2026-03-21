@@ -13,10 +13,10 @@
 {% assign mcs = site.data.monte_carlo_course %}
 
 - 系列入口：[{{ mcs.course_title_zh }}]({{ mcs.series_url | relative_url }})
-- 状态：系列已建立，第一讲已发布，后续可继续增量更新
+- 状态：按 4 个 Topic 持续更新，Topic 1 已发布
 
 {% for lesson in mcs.lessons %}
-- L{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
+- T{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
   {% if lesson.source and lesson.source != "" %}
   - Source: [Course Material]({{ lesson.source }})
   {% endif %}
