@@ -22,9 +22,11 @@
 
 股票价格常写成：
 
-$$
-dS(t)=\mu S(t)\,dt+\sigma S(t)\,dW^P(t), \qquad S(t_0)=S_0.
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dS(t)=\mu S(t)\,dt+\sigma S(t)\,dW^P(t), \qquad S(t_0)=S_0.
+  $$
+</div>
 
 其中：
 
@@ -42,15 +44,19 @@ GBM 表示“按比例波动”：价格越大，绝对波动通常也越大。
 
 货币账户（money market account）满足：
 
-$$
-\frac{dM(t)}{dt}=rM(t), \qquad M(0)=1,
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \frac{dM(t)}{dt}=rM(t), \qquad M(0)=1,
+  $$
+</div>
 
 因此：
 
-$$
-M(t)=e^{rt}.
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  M(t)=e^{rt}.
+  $$
+</div>
 
 它会作为后续贴现与换元（numeraire）的基准资产。
 
@@ -60,27 +66,33 @@ $$
 
 一般 Itô 过程：
 
-$$
-dX(t)=\bar\mu(t,X(t))\,dt+\bar\sigma(t,X(t))\,dW(t).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dX(t)=\bar\mu(t,X(t))\,dt+\bar\sigma(t,X(t))\,dW(t).
+  $$
+</div>
 
 若 `Y(t)=g(t,X(t))`，则 Itô 引理给出：
 
-$$
-dY(t)=
-\left(
-\frac{\partial g}{\partial t}
-+\bar\mu\frac{\partial g}{\partial X}
-+\frac12\bar\sigma^2\frac{\partial^2 g}{\partial X^2}
-\right)dt
-+\bar\sigma\frac{\partial g}{\partial X}\,dW(t).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dY(t)=
+  \left(
+  \frac{\partial g}{\partial t}
+  +\bar\mu\frac{\partial g}{\partial X}
+  +\frac12\bar\sigma^2\frac{\partial^2 g}{\partial X^2}
+  \right)dt
+  +\bar\sigma\frac{\partial g}{\partial X}\,dW(t).
+  $$
+</div>
 
 核心乘法规则：
 
-$$
-(dW)^2=dt,\qquad dt\cdot dW=0,\qquad (dt)^2=0.
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  (dW)^2=dt,\qquad dt\cdot dW=0,\qquad (dt)^2=0.
+  $$
+</div>
 
 ### 一句话理解
 
@@ -92,21 +104,27 @@ Itô 引理就是“随机世界里的链式法则”。
 
 令 `X(t)=\log S(t)`，应用 Itô 引理可得：
 
-$$
-dX(t)=\left(\mu-\frac12\sigma^2\right)dt+\sigma\,dW^P(t).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dX(t)=\left(\mu-\frac12\sigma^2\right)dt+\sigma\,dW^P(t).
+  $$
+</div>
 
 积分后：
 
-$$
-X(t)=\log S_0+\left(\mu-\frac12\sigma^2\right)(t-t_0)+\sigma\bigl(W^P(t)-W^P(t_0)\bigr).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X(t)=\log S_0+\left(\mu-\frac12\sigma^2\right)(t-t_0)+\sigma\bigl(W^P(t)-W^P(t_0)\bigr).
+  $$
+</div>
 
 因此 `X(t)=\log S(t)` 服从正态分布，`S(t)` 服从对数正态分布，其显式解为：
 
-$$
-S(t)=S_0\exp\!\left[\left(\mu-\frac12\sigma^2\right)(t-t_0)+\sigma\bigl(W^P(t)-W^P(t_0)\bigr)\right].
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  S(t)=S_0\exp\!\left[\left(\mu-\frac12\sigma^2\right)(t-t_0)+\sigma\bigl(W^P(t)-W^P(t_0)\bigr)\right].
+  $$
+</div>
 
 ---
 
@@ -114,29 +132,37 @@ $$
 
 在 `P` 测度下：
 
-$$
-E^P[S(t)\mid\mathcal F(t_0)]=S_0e^{\mu(t-t_0)}.
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  E^P[S(t)\mid\mathcal F(t_0)]=S_0e^{\mu(t-t_0)}.
+  $$
+</div>
 
 若 `\mu>0`，原始价格通常不是鞅。
 
 在 `Q` 测度下，漂移替换为无风险利率 `r`：
 
-$$
-dS(t)=rS(t)\,dt+\sigma S(t)\,dW^Q(t).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dS(t)=rS(t)\,dt+\sigma S(t)\,dW^Q(t).
+  $$
+</div>
 
 定义贴现价格：
 
-$$
-\tilde S(t):=\frac{S(t)}{M(t)}=e^{-rt}S(t),
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \tilde S(t):=\frac{S(t)}{M(t)}=e^{-rt}S(t),
+  $$
+</div>
 
 则满足鞅性质：
 
-$$
-E^Q[\tilde S(t+\Delta t)\mid\mathcal F(t)]=\tilde S(t).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  E^Q[\tilde S(t+\Delta t)\mid\mathcal F(t)]=\tilde S(t).
+  $$
+</div>
 
 ### 一句话理解
 
@@ -148,24 +174,30 @@ $$
 
 对算术布朗运动（ABM）
 
-$$
-dX(t)=\mu\,dt+\sigma\,dW^P(t),
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  dX(t)=\mu\,dt+\sigma\,dW^P(t),
+  $$
+</div>
 
 离散观测步长为 `\Delta t` 时：
 
-$$
-X(t+\Delta t)\mid X(t)\sim N\!\bigl(X(t)+\mu\Delta t,\;\sigma^2\Delta t\bigr).
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  X(t+\Delta t)\mid X(t)\sim N\!\bigl(X(t)+\mu\Delta t,\;\sigma^2\Delta t\bigr).
+  $$
+</div>
 
 最大似然估计（MLE）可写为：
 
-$$
-\hat\mu=\frac{X(t_m)-X(t_0)}{m\Delta t},
-\qquad
-\hat\sigma^2=
-\frac{1}{m\Delta t}\sum_{k=0}^{m-1}\bigl(X(t_{k+1})-X(t_k)-\hat\mu\Delta t\bigr)^2.
-$$
+<div class="card card-body bg-light my-3 text-center">
+  $$
+  \hat\mu=\frac{X(t_m)-X(t_0)}{m\Delta t},
+  \qquad
+  \hat\sigma^2=
+  \frac{1}{m\Delta t}\sum_{k=0}^{m-1}\bigl(X(t_{k+1})-X(t_k)-\hat\mu\Delta t\bigr)^2.
+  $$
+</div>
 
 对 GBM，先令 `X=\log S` 后可用同样思路估计。
 
