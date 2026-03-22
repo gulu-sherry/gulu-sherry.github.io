@@ -19,3 +19,10 @@ lessons:
     url: /fin/qf/c2/
     source: ""
     status: published
+  - no: 3
+    slug: chapter-3-black-scholes-option-pricing-equation
+    title_zh: Chapter 3 Black-Scholes 期权定价方程、Feynman-Kac 与 Delta 对冲
+    title_en: Chapter 3 The Black-Scholes Option Pricing Equation, Feynman-Kac, and Delta Hedging
+    url: /fin/qf/c3/
+    source: ""
+    status: published
