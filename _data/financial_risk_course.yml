@@ -40,3 +40,10 @@ lessons:
     url: /fin/frm/t5/
     source: ""
     status: published
+  - no: 6
+    slug: topic-6-structural-models-of-defaults
+    title_zh: Topic 6 结构化违约模型：CreditMetrics、Copula 与 KMV
+    title_en: Topic 6 Structural Models of Defaults: CreditMetrics, Copula, and KMV
+    url: /fin/frm/t6/
+    source: ""
+    status: published
