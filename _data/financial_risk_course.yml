@@ -26,3 +26,10 @@ lessons:
     url: /fin/frm/t3/
     source: ""
     status: published
+  - no: 4
+    slug: topic-4-credit-derivatives-and-counterparty-risks
+    title_zh: Topic 4 信用衍生品与交易对手风险
+    title_en: Topic 4 Credit Derivatives and Counterparty Risks
+    url: /fin/frm/t4/
+    source: ""
+    status: published
