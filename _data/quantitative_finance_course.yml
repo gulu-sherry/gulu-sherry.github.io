@@ -1,0 +1,14 @@
+course_id: quantitative-finance
+course_title_zh: 量化金融（系列）
+course_title_en: Quantitative Finance (Series)
+track: FIN
+series_status: building
+planned_topics: 15
+lessons:
+  - no: 1
+    slug: chapter-1-basics-of-stochastic-processes
+    title_zh: Chapter 1 随机过程基础、鞅与 Itô 积分
+    title_en: Chapter 1 Basics of Stochastic Processes, Martingales, and Ito Integral
+    url: /fin/qf/c1/
+    source: ""
+    status: published
