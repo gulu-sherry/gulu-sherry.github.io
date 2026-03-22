@@ -12,3 +12,10 @@ lessons:
     url: /fin/frm/t1/
     source: ""
     status: published
+  - no: 2
+    slug: topic-2-loss-distribution-var-and-es
+    title_zh: Topic 2 损失分布、VaR 与预期短缺
+    title_en: Topic 2 Loss Distribution, VaR, and Expected Shortfall
+    url: /fin/frm/t2/
+    source: ""
+    status: published
