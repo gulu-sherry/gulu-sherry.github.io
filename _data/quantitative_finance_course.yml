@@ -26,3 +26,10 @@ lessons:
     url: /fin/qf/c3/
     source: ""
     status: published
+  - no: 4
+    slug: chapter-4-local-volatility-models
+    title_zh: Chapter 4 局部波动率模型：隐含波动率微笑、Dupire 与无套利插值
+    title_en: Chapter 4 Local Volatility Models, Dupire Equation, and Arbitrage-Free Interpolation
+    url: /fin/qf/c4/
+    source: ""
+    status: published
