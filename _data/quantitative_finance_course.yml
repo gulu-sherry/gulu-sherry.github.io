@@ -33,3 +33,10 @@ lessons:
     url: /fin/qf/c4/
     source: ""
     status: published
+  - no: 5
+    slug: chapter-5-jump-processes
+    title_zh: Chapter 5 跳跃过程：Jump Diffusion、PIDE 与指数 Lévy 模型
+    title_en: Chapter 5 Jump Processes, PIDE, and Exponential Levy Models
+    url: /fin/qf/c5/
+    source: ""
+    status: published
