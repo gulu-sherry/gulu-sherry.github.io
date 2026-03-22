@@ -12,3 +12,10 @@ lessons:
     url: /fin/qf/c1/
     source: ""
     status: published
+  - no: 2
+    slug: chapter-2-introduction-to-financial-asset-dynamics
+    title_zh: Chapter 2 金融资产动力学导论：GBM、Itô 引理与 P/Q 测度
+    title_en: "Chapter 2 Introduction to Financial Asset Dynamics: GBM, Ito Lemma, and P/Q Measures"
+    url: /fin/qf/c2/
+    source: ""
+    status: published
