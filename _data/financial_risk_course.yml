@@ -33,3 +33,10 @@ lessons:
     url: /fin/frm/t4/
     source: ""
     status: published
+  - no: 5
+    slug: topic-5-mixture-models-and-creditrisk-plus
+    title_zh: Topic 5 违约混合模型与 CreditRisk+
+    title_en: Topic 5 Mixture Models of Defaults and CreditRisk+
+    url: /fin/frm/t5/
+    source: ""
+    status: published
