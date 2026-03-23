@@ -54,3 +54,10 @@ lessons:
     url: /fin/qf/c7/
     source: ""
     status: published
+  - no: 8
+    slug: chapter-8-stochastic-volatility-models
+    title_zh: Chapter 8 随机波动率模型：Heston、CIR 与特征函数定价
+    title_en: Chapter 8 Stochastic Volatility Models, Heston, and Characteristic-Function Pricing
+    url: /fin/qf/c8/
+    source: ""
+    status: published
