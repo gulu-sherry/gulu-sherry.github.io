@@ -69,3 +69,10 @@ lessons:
     url: /tech/dmu/c9/
     source: ""
     status: published
+  - no: 10
+    slug: chapter-10-optimized-airborne-collision-avoidance
+    title_zh: Chapter 10 机载防撞优化：ACAS X 与 POMDP 决策
+    title_en: Chapter 10 Optimized Airborne Collision Avoidance
+    url: /tech/dmu/c10/
+    source: ""
+    status: published
