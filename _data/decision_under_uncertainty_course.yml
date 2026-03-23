@@ -34,3 +34,10 @@ lessons:
     url: /tech/dmu/c4/
     source: ""
     status: published
+  - no: 5
+    slug: chapter-5-model-uncertainty
+    title_zh: Chapter 5 模型不确定性：探索、学习与泛化
+    title_en: Chapter 5 Model Uncertainty
+    url: /tech/dmu/c5/
+    source: ""
+    status: published
