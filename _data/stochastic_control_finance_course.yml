@@ -47,3 +47,10 @@ lessons:
     url: /fin/scf/c6/
     source: ""
     status: published
+  - no: 7
+    slug: chapter-7-martingale-and-convex-duality
+    title_zh: Chapter 7 鞅方法与凸对偶：超复制、效用优化与均方对冲
+    title_en: Chapter 7 Martingale and Convex Duality Methods
+    url: /fin/scf/c7/
+    source: ""
+    status: published
