@@ -47,3 +47,10 @@ lessons:
     url: /fin/qf/c6/
     source: ""
     status: published
+  - no: 7
+    slug: chapter-7-multidimensionality-change-of-measure-affine-processes
+    title_zh: Chapter 7 多维系统、换测度与仿射过程
+    title_en: Chapter 7 Multidimensionality, Change of Measure, and Affine Processes
+    url: /fin/qf/c7/
+    source: ""
+    status: published
