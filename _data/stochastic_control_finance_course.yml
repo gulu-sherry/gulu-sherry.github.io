@@ -26,3 +26,10 @@ lessons:
     url: /fin/scf/c3/
     source: ""
     status: published
+  - no: 4
+    slug: chapter-4-viscosity-solutions-approach
+    title_zh: Chapter 4 粘性解方法：非光滑价值函数下的 HJB 理论
+    title_en: Chapter 4 Viscosity Solutions Approach to Stochastic Control
+    url: /fin/scf/c4/
+    source: ""
+    status: published
