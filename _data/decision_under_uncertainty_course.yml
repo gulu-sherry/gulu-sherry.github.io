@@ -76,3 +76,10 @@ lessons:
     url: /tech/dmu/c10/
     source: ""
     status: published
+  - no: 11
+    slug: chapter-11-multiagent-persistent-surveillance
+    title_zh: Chapter 11 多智能体持续监视规划：分解近似与在线学习
+    title_en: Chapter 11 Multiagent Planning for Persistent Surveillance
+    url: /tech/dmu/c11/
+    source: ""
+    status: published
