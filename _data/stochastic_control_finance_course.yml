@@ -33,3 +33,10 @@ lessons:
     url: /fin/scf/c4/
     source: ""
     status: published
+  - no: 5
+    slug: chapter-5-optimal-switching-and-free-boundary
+    title_zh: Chapter 5 最优切换与自由边界：停止、阈值与 Regime 决策
+    title_en: Chapter 5 Optimal Switching and Free Boundary Problems
+    url: /fin/scf/c5/
+    source: ""
+    status: published
