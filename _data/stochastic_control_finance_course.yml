@@ -40,3 +40,10 @@ lessons:
     url: /fin/scf/c5/
     source: ""
     status: published
+  - no: 6
+    slug: chapter-6-bsde-and-optimal-control
+    title_zh: Chapter 6 BSDE 与最优控制：非线性 PDE 的概率表示
+    title_en: Chapter 6 Backward Stochastic Differential Equations and Optimal Control
+    url: /fin/scf/c6/
+    source: ""
+    status: published
