@@ -14,35 +14,35 @@ lessons:
     status: published
   - no: 2
     slug: chapter-2-introduction-to-financial-asset-dynamics
-    title_zh: Chapter 2 金融资产动力学导论：GBM、Itô 引理与 P/Q 测度
-    title_en: "Chapter 2 Introduction to Financial Asset Dynamics: GBM, Ito Lemma, and P/Q Measures"
+    title_zh: Chapter 2 金融资产动力学导论（GBM、Itô 引理、P/Q 测度）
+    title_en: Chapter 2 Introduction to Financial Asset Dynamics, GBM, Ito Lemma, and P/Q Measures
     url: /fin/qf/c2/
     source: ""
     status: published
   - no: 3
     slug: chapter-3-black-scholes-option-pricing-equation
-    title_zh: Chapter 3 Black-Scholes 期权定价方程、Feynman-Kac 与 Delta 对冲
+    title_zh: Chapter 3 Black-Scholes 方程、Feynman-Kac 与 Delta 对冲
     title_en: Chapter 3 The Black-Scholes Option Pricing Equation, Feynman-Kac, and Delta Hedging
     url: /fin/qf/c3/
     source: ""
     status: published
   - no: 4
     slug: chapter-4-local-volatility-models
-    title_zh: Chapter 4 局部波动率模型：隐含波动率微笑、Dupire 与无套利插值
+    title_zh: Chapter 4 局部波动率模型、Dupire 方程与无套利插值
     title_en: Chapter 4 Local Volatility Models, Dupire Equation, and Arbitrage-Free Interpolation
     url: /fin/qf/c4/
     source: ""
     status: published
   - no: 5
     slug: chapter-5-jump-processes
-    title_zh: Chapter 5 跳跃过程：Jump Diffusion、PIDE 与指数 Lévy 模型
+    title_zh: Chapter 5 跳跃过程、PIDE 与指数 Levy 模型
     title_en: Chapter 5 Jump Processes, PIDE, and Exponential Levy Models
     url: /fin/qf/c5/
     source: ""
     status: published
   - no: 6
     slug: chapter-6-cos-method-for-european-option-valuation
-    title_zh: Chapter 6 COS 方法：基于特征函数的欧式期权高效定价
+    title_zh: Chapter 6 COS 方法：基于特征函数的欧式期权定价
     title_en: Chapter 6 COS Method for European Option Valuation
     url: /fin/qf/c6/
     source: ""
@@ -56,15 +56,22 @@ lessons:
     status: published
   - no: 8
     slug: chapter-8-stochastic-volatility-models
-    title_zh: Chapter 8 随机波动率模型：Heston、CIR 与特征函数定价
+    title_zh: Chapter 8 随机波动率模型（Heston、CIR 与特征函数定价）
     title_en: Chapter 8 Stochastic Volatility Models, Heston, and Characteristic-Function Pricing
     url: /fin/qf/c8/
     source: ""
     status: published
   - no: 9
     slug: chapter-9-monte-carlo-simulation
-    title_zh: Chapter 9 蒙特卡洛模拟：Euler/Milstein、Heston 路径与 Greeks
+    title_zh: Chapter 9 蒙特卡洛模拟（Euler/Milstein、Heston 路径与 Greeks）
     title_en: Chapter 9 Monte Carlo Simulation for Option Pricing and Greeks
     url: /fin/qf/c9/
+    source: ""
+    status: published
+  - no: 10
+    slug: chapter-10-forward-start-options-stochastic-local-volatility
+    title_zh: Chapter 10 远期生效期权与随机局部波动率模型（SLV）
+    title_en: Chapter 10 Forward Start Options and Stochastic Local Volatility Model
+    url: /fin/qf/c10/
     source: ""
     status: published
