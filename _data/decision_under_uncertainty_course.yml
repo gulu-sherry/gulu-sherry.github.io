@@ -41,3 +41,10 @@ lessons:
     url: /tech/dmu/c5/
     source: ""
     status: published
+  - no: 6
+    slug: chapter-6-state-uncertainty
+    title_zh: Chapter 6 状态不确定性：POMDP 与信念更新
+    title_en: Chapter 6 State Uncertainty
+    url: /tech/dmu/c6/
+    source: ""
+    status: published
