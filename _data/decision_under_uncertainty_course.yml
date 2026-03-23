@@ -48,3 +48,10 @@ lessons:
     url: /tech/dmu/c6/
     source: ""
     status: published
+  - no: 7
+    slug: chapter-7-cooperative-decision-making
+    title_zh: Chapter 7 协作决策：Dec-POMDP 与多智能体规划
+    title_en: Chapter 7 Cooperative Decision Making
+    url: /tech/dmu/c7/
+    source: ""
+    status: published
