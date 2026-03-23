@@ -62,3 +62,10 @@ lessons:
     url: /tech/dmu/c8/
     source: ""
     status: published
+  - no: 9
+    slug: chapter-9-dynamic-models-speech
+    title_zh: Chapter 9 语音动态模型：HMM/GMM 与识别决策
+    title_en: Chapter 9 Dynamic Models for Speech Applications
+    url: /tech/dmu/c9/
+    source: ""
+    status: published
