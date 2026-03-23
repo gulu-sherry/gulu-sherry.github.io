@@ -3,7 +3,7 @@ course_title_zh: 不确定性下的决策（系列）
 course_title_en: Decision-making under uncertainty (Series)
 track: Tech
 series_url: /tech/dmu/
-series_status: building
+series_status: published
 planned_topics: 12
 lessons:
   - no: 1
@@ -81,5 +81,12 @@ lessons:
     title_zh: Chapter 11 多智能体持续监视规划：分解近似与在线学习
     title_en: Chapter 11 Multiagent Planning for Persistent Surveillance
     url: /tech/dmu/c11/
+    source: ""
+    status: published
+  - no: 12
+    slug: chapter-12-integrating-automation-with-humans
+    title_zh: Chapter 12 自动化与人协同：信任、不确定性与系统实施
+    title_en: Chapter 12 Integrating Automation with Humans
+    url: /tech/dmu/c12/
     source: ""
     status: published
