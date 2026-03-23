@@ -1,0 +1,15 @@
+course_id: decision-making-under-uncertainty
+course_title_zh: 不确定性下的决策（系列）
+course_title_en: Decision-making under uncertainty (Series)
+track: Tech
+series_url: /tech/dmu/
+series_status: building
+planned_topics: 12
+lessons:
+  - no: 1
+    slug: chapter-1-introduction
+    title_zh: Chapter 1 导论：决策循环与方法谱系
+    title_en: Chapter 1 Introduction
+    url: /tech/dmu/c1/
+    source: ""
+    status: published
