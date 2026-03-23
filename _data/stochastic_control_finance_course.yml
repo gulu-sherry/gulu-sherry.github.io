@@ -1,0 +1,14 @@
+course_id: stochastic-control-in-finance
+course_title_zh: 金融随机控制（系列）
+course_title_en: Stochastic Control in Finance (Series)
+track: FIN
+series_status: building
+planned_topics: 8
+lessons:
+  - no: 1
+    slug: chapter-1-stochastic-analysis-foundations
+    title_zh: Chapter 1 随机分析基础：滤过、鞅、Itô 积分与 SDE
+    title_en: Chapter 1 Stochastic Analysis Foundations, Martingales, Ito Integral, and SDE
+    url: /fin/scf/c1/
+    source: ""
+    status: published
