@@ -89,3 +89,10 @@ lessons:
     url: /fin/qf/c12/
     source: ""
     status: published
+  - no: 13
+    slug: chapter-13-hybrid-asset-models-and-cva
+    title_zh: Chapter 13 混合资产模型与信用估值调整（CVA）
+    title_en: Chapter 13 Hybrid Asset Models and Credit Valuation Adjustment
+    url: /fin/qf/c13/
+    source: ""
+    status: published
