@@ -20,3 +20,10 @@ lessons:
     url: /tech/dmu/c2/
     source: ""
     status: published
+  - no: 3
+    slug: chapter-3-decision-problems
+    title_zh: Chapter 3 决策问题：效用、决策网络与博弈
+    title_en: Chapter 3 Decision Problems
+    url: /tech/dmu/c3/
+    source: ""
+    status: published
