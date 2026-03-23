@@ -27,3 +27,10 @@ lessons:
     url: /tech/dmu/c3/
     source: ""
     status: published
+  - no: 4
+    slug: chapter-4-sequential-problems
+    title_zh: Chapter 4 序贯决策：MDP 与动态规划
+    title_en: Chapter 4 Sequential Problems
+    url: /tech/dmu/c4/
+    source: ""
+    status: published
