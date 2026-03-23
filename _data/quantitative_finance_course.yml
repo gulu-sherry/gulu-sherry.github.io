@@ -40,3 +40,10 @@ lessons:
     url: /fin/qf/c5/
     source: ""
     status: published
+  - no: 6
+    slug: chapter-6-cos-method-for-european-option-valuation
+    title_zh: Chapter 6 COS 方法：基于特征函数的欧式期权高效定价
+    title_en: Chapter 6 COS Method for European Option Valuation
+    url: /fin/qf/c6/
+    source: ""
+    status: published
