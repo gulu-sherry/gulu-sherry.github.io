@@ -19,3 +19,10 @@ lessons:
     url: /fin/scf/c2/
     source: ""
     status: published
+  - no: 3
+    slug: chapter-3-classical-pde-approach-to-dynamic-programming
+    title_zh: Chapter 3 动态规划的经典 PDE 路径：DPP、HJB 与验证定理
+    title_en: Chapter 3 Classical PDE Approach to Dynamic Programming
+    url: /fin/scf/c3/
+    source: ""
+    status: published
