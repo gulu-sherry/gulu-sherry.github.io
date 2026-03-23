@@ -2,7 +2,7 @@ course_id: stochastic-control-in-finance
 course_title_zh: 金融随机控制（系列）
 course_title_en: Stochastic Control in Finance (Series)
 track: FIN
-series_status: building
+series_status: completed
 planned_topics: 8
 lessons:
   - no: 1
@@ -52,5 +52,12 @@ lessons:
     title_zh: Chapter 7 鞅方法与凸对偶：超复制、效用优化与均方对冲
     title_en: Chapter 7 Martingale and Convex Duality Methods
     url: /fin/scf/c7/
+    source: ""
+    status: published
+  - no: 8
+    slug: chapter-8-mathematical-foundations-appendix
+    title_zh: Chapter 8 数学基础附录：积分收敛、紧性与凸分析工具
+    title_en: Chapter 8 Mathematical Foundations, Integration, and Convex Analysis
+    url: /fin/scf/c8/
     source: ""
     status: published

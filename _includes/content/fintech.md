@@ -26,7 +26,7 @@
 
 {% assign scf = site.data.stochastic_control_finance_course %}
 
-- 状态：按 8 章持续更新，Chapter 1-7 已发布
+- 状态：8 章已全部发布（系列完结）
   {% for lesson in scf.lessons %}
 - C{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
   {% if lesson.source and lesson.source != "" %}
