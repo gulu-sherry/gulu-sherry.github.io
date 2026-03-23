@@ -2,7 +2,7 @@ course_id: quantitative-finance
 course_title_zh: 量化金融（系列）
 course_title_en: Quantitative Finance (Series)
 track: FIN
-series_status: building
+series_status: completed
 planned_topics: 15
 lessons:
   - no: 1
@@ -101,5 +101,12 @@ lessons:
     title_zh: Chapter 14 高级利率模型与推广（LMM、负利率、多曲线）
     title_en: Chapter 14 Advanced Interest Rate Models and Generalizations
     url: /fin/qf/c14/
+    source: ""
+    status: published
+  - no: 15
+    slug: chapter-15-cross-currency-models
+    title_zh: Chapter 15 跨货币模型（FX-IR 混合与 FX-CVA）
+    title_en: Chapter 15 Cross-Currency Models
+    url: /fin/qf/c15/
     source: ""
     status: published
