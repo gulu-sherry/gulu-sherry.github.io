@@ -26,7 +26,7 @@
 
 {% assign dmu = site.data.decision_under_uncertainty_course %}
 
-- 状态：按 12 章持续更新，Chapter 1-7 已发布
+- 状态：按 12 章持续更新，Chapter 1-8 已发布
   {% for lesson in dmu.lessons %}
 - C{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
   {% endfor %}

@@ -55,3 +55,10 @@ lessons:
     url: /tech/dmu/c7/
     source: ""
     status: published
+  - no: 8
+    slug: chapter-8-probabilistic-video-search
+    title_zh: Chapter 8 概率视频检索：属性搜索与生成模型
+    title_en: Chapter 8 Probabilistic Surveillance Video Search
+    url: /tech/dmu/c8/
+    source: ""
+    status: published
