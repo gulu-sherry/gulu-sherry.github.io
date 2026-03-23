@@ -82,3 +82,10 @@ lessons:
     url: /fin/qf/c11/
     source: ""
     status: published
+  - no: 12
+    slug: chapter-12-interest-rate-derivatives-and-valuation-adjustments
+    title_zh: Chapter 12 利率衍生品与估值调整（CVA/BCVA）
+    title_en: Chapter 12 Interest Rate Derivatives and Valuation Adjustments
+    url: /fin/qf/c12/
+    source: ""
+    status: published

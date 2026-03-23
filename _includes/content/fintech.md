@@ -14,7 +14,7 @@
 
 {% assign qf = site.data.quantitative_finance_course %}
 
-- 状态：按 15 章持续更新，Chapter 1 至 Chapter 11 已发布
+- 状态：按 15 章持续更新，Chapter 1 至 Chapter 12 已发布
   {% for lesson in qf.lessons %}
 - C{{ lesson.no }} - [{{ lesson.title_zh }}]({{ lesson.url | relative_url }})
   {% if lesson.source and lesson.source != "" %}
