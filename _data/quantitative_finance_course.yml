@@ -75,3 +75,10 @@ lessons:
     url: /fin/qf/c10/
     source: ""
     status: published
+  - no: 11
+    slug: chapter-11-short-rate-models
+    title_zh: Chapter 11 短端利率模型（HJM、Hull-White、CIR）
+    title_en: Chapter 11 Short-Rate Models, HJM Framework, Hull-White, and CIR
+    url: /fin/qf/c11/
+    source: ""
+    status: published
