@@ -96,3 +96,10 @@ lessons:
     url: /fin/qf/c13/
     source: ""
     status: published
+  - no: 14
+    slug: chapter-14-advanced-interest-rate-models-and-generalizations
+    title_zh: Chapter 14 高级利率模型与推广（LMM、负利率、多曲线）
+    title_en: Chapter 14 Advanced Interest Rate Models and Generalizations
+    url: /fin/qf/c14/
+    source: ""
+    status: published
