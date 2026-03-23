@@ -12,3 +12,10 @@ lessons:
     url: /fin/scf/c1/
     source: ""
     status: published
+  - no: 2
+    slug: chapter-2-stochastic-optimization-problems-in-finance
+    title_zh: Chapter 2 随机优化问题：金融场景中的统一建模
+    title_en: Chapter 2 Stochastic Optimization Problems and Financial Examples
+    url: /fin/scf/c2/
+    source: ""
+    status: published
