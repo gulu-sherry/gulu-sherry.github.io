@@ -61,3 +61,10 @@ lessons:
     url: /fin/qf/c8/
     source: ""
     status: published
+  - no: 9
+    slug: chapter-9-monte-carlo-simulation
+    title_zh: Chapter 9 蒙特卡洛模拟：Euler/Milstein、Heston 路径与 Greeks
+    title_en: Chapter 9 Monte Carlo Simulation for Option Pricing and Greeks
+    url: /fin/qf/c9/
+    source: ""
+    status: published
