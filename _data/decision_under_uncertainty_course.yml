@@ -13,3 +13,10 @@ lessons:
     url: /tech/dmu/c1/
     source: ""
     status: published
+  - no: 2
+    slug: chapter-2-probabilistic-models
+    title_zh: Chapter 2 概率模型：表示、推断与学习
+    title_en: Chapter 2 Probabilistic Models
+    url: /tech/dmu/c2/
+    source: ""
+    status: published
