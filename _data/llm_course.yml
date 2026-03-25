@@ -68,3 +68,10 @@ lessons:
     url: /tech/llm/c9/
     source: ""
     status: published
+  - no: 10
+    slug: chapter-10-llm-hallucination
+    title_zh: Chapter 10 LLM 幻觉：成因、评估与缓解
+    title_en: Chapter 10 LLM Hallucination
+    url: /tech/llm/c10/
+    source: ""
+    status: published
