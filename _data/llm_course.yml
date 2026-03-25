@@ -33,3 +33,10 @@ lessons:
     url: /tech/llm/c4/
     source: ""
     status: published
+  - no: 5
+    slug: chapter-5-modern-gpts-pretraining-and-scaling-laws
+    title_zh: Chapter 5 现代 GPT、预训练与 Scaling Laws：从 BERT 到 GPT-3
+    title_en: Chapter 5 Modern GPTs, Pre-training, and Scaling Laws
+    url: /tech/llm/c5/
+    source: ""
+    status: published
