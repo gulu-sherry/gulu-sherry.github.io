@@ -1,0 +1,14 @@
+course_id: llm-theory-and-practice
+course_title_zh: 大语言模型（系列）
+course_title_en: Large Language Models, Theory and Practice (Series)
+track: Tech
+series_status: building
+planned_topics: 12
+lessons:
+  - no: 1
+    slug: chapter-1-llm-overview-and-roadmap
+    title_zh: Chapter 1 LLM 全景导论：从语言建模到 Agent 系统
+    title_en: Chapter 1 LLM Overview from Language Modeling to Agent Systems
+    url: /tech/llm/c1/
+    source: ""
+    status: published
