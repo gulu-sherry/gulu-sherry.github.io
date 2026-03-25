@@ -75,3 +75,10 @@ lessons:
     url: /tech/llm/c10/
     source: ""
     status: published
+  - no: 11
+    slug: chapter-11-llm-programs-and-verifiers
+    title_zh: Chapter 11 LLM Programs、Verifier 与 DSPy
+    title_en: Chapter 11 LLM Programs, Verifiers, and DSPy
+    url: /tech/llm/c11/
+    source: ""
+    status: published
