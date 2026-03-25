@@ -12,3 +12,10 @@ lessons:
     url: /tech/llm/c1/
     source: ""
     status: published
+  - no: 2
+    slug: chapter-2-deep-learning-fundamentals-and-tokenization
+    title_zh: Chapter 2 深度学习基础与 Tokenization：从文本到向量表示
+    title_en: Chapter 2 Deep Learning Fundamentals and Tokenization
+    url: /tech/llm/c2/
+    source: ""
+    status: published
