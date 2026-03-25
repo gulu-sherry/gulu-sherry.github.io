@@ -61,3 +61,10 @@ lessons:
     url: /tech/llm/c8/
     source: ""
     status: published
+  - no: 9
+    slug: chapter-9-llamaguard-and-rag-systems
+    title_zh: Chapter 9 LlamaGuard 与 RAG 系统
+    title_en: Chapter 9 LlamaGuard and RAG Systems
+    url: /tech/llm/c9/
+    source: ""
+    status: published
