@@ -47,3 +47,10 @@ lessons:
     url: /tech/llm/c6/
     source: ""
     status: published
+  - no: 7
+    slug: chapter-7-rlhf-dpo-and-preference-optimization
+    title_zh: Chapter 7 RLHF、DPO 与偏好优化
+    title_en: Chapter 7 RLHF, DPO, and Preference Optimization
+    url: /tech/llm/c7/
+    source: ""
+    status: published
