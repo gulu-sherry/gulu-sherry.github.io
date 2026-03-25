@@ -54,3 +54,10 @@ lessons:
     url: /tech/llm/c7/
     source: ""
     status: published
+  - no: 8
+    slug: chapter-8-dpo-prompting-and-llamaguard
+    title_zh: Chapter 8 DPO、Prompting 与 LlamaGuard
+    title_en: Chapter 8 DPO, Prompting, and LlamaGuard
+    url: /tech/llm/c8/
+    source: ""
+    status: published
