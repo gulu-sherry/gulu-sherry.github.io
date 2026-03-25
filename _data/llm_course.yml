@@ -82,3 +82,10 @@ lessons:
     url: /tech/llm/c11/
     source: ""
     status: published
+  - no: 12
+    slug: chapter-12-tool-use-and-agents
+    title_zh: Chapter 12 工具调用与 Agent 系统
+    title_en: Chapter 12 Tool Uses and Agents
+    url: /tech/llm/c12/
+    source: ""
+    status: published
