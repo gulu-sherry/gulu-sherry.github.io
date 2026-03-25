@@ -40,3 +40,10 @@ lessons:
     url: /tech/llm/c5/
     source: ""
     status: published
+  - no: 6
+    slug: chapter-6-instruction-tuning-efficient-tuning-and-data
+    title_zh: Chapter 6 指令微调、轻量化微调与数据质量
+    title_en: Chapter 6 Instruction Tuning, Efficient Tuning, and Data Quality
+    url: /tech/llm/c6/
+    source: ""
+    status: published
